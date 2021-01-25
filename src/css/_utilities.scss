@@ -1,0 +1,86 @@
+// Extra font size utilities.
+@each $name, $fontSize in $font-sizes {
+  .font-#{$name} {
+    font-size: $fontSize;
+  }
+}
+
+@each $type, $browser in $font-aliasing {
+  .font-#{$type} {
+    -webkit-font-smoothing: map-get($browser, "webkit");
+    -moz-osx-font-smoothing: map-get($browser, "moz-osx");
+  }
+}
+
+// Extra border width utilities.
+@each $name, $width in $border-sizes {
+  .border-#{$name} {
+    border-width: $width !important;
+  }
+}
+
+// Extra border style utilities.
+@each $name in $border-styles {
+  .border-#{$name} {
+    border-style: $name !important;
+  }
+}
+
+// Cursor utilities
+@each $name in $cursors {
+  .cursor-#{$name} {
+    cursor: $name;
+  }
+}
+
+// Letter spacing utilities
+@each $name, $spacing in $letter-spacings {
+  .tracking-#{$name} {
+    letter-spacing: $spacing;
+  }
+}
+
+// Extra utilities with breakpoints.
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    // Font sizes with breakpoints.
+    @each $name, $fontSize in $font-sizes {
+      .font#{$infix}-#{$name} {
+        font-size: $fontSize;
+      }
+    }
+
+    // Border sizes with breakpoints.
+    @each $name, $width in $border-sizes {
+      .border#{$infix}-#{$name} {
+        border-width: $width !important;
+      }
+    }
+
+    // Border sizes with breakpoints.
+    @each $name in $border-styles {
+      .border#{$infix}-#{$name} {
+        border-style: $name !important;
+      }
+    }
+
+    // Positions with breakpoints.
+    .position#{$infix}-fixed {
+      position: fixed !important;
+    }
+    .position#{$infix}-static {
+      position: static !important;
+    }
+    .position#{$infix}-sticky {
+      position: sticky !important;
+    }
+    .position#{$infix}-relative {
+      position: relative !important;
+    }
+    .position#{$infix}-absolute {
+      position: absolute !important;
+    }
+  }
+}

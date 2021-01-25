@@ -1,0 +1,28 @@
+// Global font.
+@import url("https://rsms.me/inter/inter.css");
+
+// App variables.
+@import "variables";
+
+// Bootstrap functions and variables.
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+// Additional spacers. This is intentionally
+// defined outside of the utilities scope,
+// due to requiring the default $spacer.
+$spacers: (
+  6: (
+    $spacer * 4.5,
+  ),
+  7: (
+    $spacer * 6,
+  ),
+);
+
+// Bootstrap.
+@import "~bootstrap/scss/bootstrap";
+
+// App utilities.
+@import "utilities";

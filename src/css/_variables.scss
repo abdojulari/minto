@@ -1,0 +1,98 @@
+// Body background.
+$body-bg: #fff;
+
+// Typography.
+$font-family-sans-serif: "Inter", sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1;
+
+// Colors.
+$blue: #3490dc;
+$indigo: #6574cd;
+$purple: #9561e2;
+$pink: #f66d9b;
+$red: #e3342f;
+$orange: #f6993f;
+$yellow: #ffed4a;
+$green: #38c172;
+$teal: #4dc0b5;
+$cyan: #6cb2eb;
+$secondary: #7b8f98;
+$primary: #0060cf;
+$success: #9ae6b4;
+$light-gray:#E0E0E0;
+$dark-gray:#424242 ;
+
+// Custom theme colors.
+$theme-colors: (
+  "dark-green": #0cb546,
+  "gray-300": #E0E0E0,
+  "gray-400": #616161,
+  "gray-500": #2e3d51,
+  "gray-600": #181f28,
+  "gray-700": #191e23,
+  "gray-800": #12161a,
+  "gray-900": #0d0e0f,
+  "white-1": #ffffff,
+);
+
+// Custom large border radius.
+$border-radius-lg: 0.4rem;
+
+// Custom form settings.
+$input-height: 2.5rem;
+$input-color: #ffffff;
+
+// Custom dark border color.
+$border-dark: black;
+
+// Font sizes.
+$font-sizes: (
+  2xs: $font-size-base - 0.5,
+  xs: $font-size-base - 0.25,
+  sm: $font-size-base - 0.125,
+  base: $font-size-base,
+  lg: $font-size-base + 0.125,
+  xl: $font-size-base + 0.25,
+  2xl: $font-size-base + 0.5,
+  3xl: $font-size-base + 0.875,
+  4xl: $font-size-base + 1.25,
+  5xl: $font-size-base + 2,
+  6xl: $font-size-base + 2.75,
+  7xl: $font-size-base + 3.5,
+  8xl: $font-size-base + 5,
+  9xl: $font-size-base + 7,
+);
+
+// Font aliasing.
+$font-aliasing: (
+  antialiasing: (
+    "webkit": antialiased,
+    "moz-osx": grayscale,
+  ),
+);
+
+// Letter spacings.
+$letter-spacings: (
+  tighter: -0.05em,
+  tight: -0.025em,
+  normal: 0,
+  wide: 0.025em,
+  wider: 0.05em,
+  widest: 0.1em,
+);
+
+// Border sizes.
+$border-sizes: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px,
+);
+
+// Border styles.
+$border-styles: (solid, dashed, dotted, double, none);
+
+// Cursors.
+$cursors: (auto, default, pointer, wait, text, move, not-allowed);
